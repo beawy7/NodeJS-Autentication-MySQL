@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css/">
+    <title>Pubbik</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+    <h1>Home Page</h1>
+    <form action="/auth/register" method="POST">
+        <div class="form_register">
+            <label for="name">Name</label>
+            <input type="text" class="rform" id="name" name="name">
+        </div>
+
+        <div class="form_register">
+            <label for="email">Email Address</label>
+            <input type="email" class="rform" id="email" name="email">
+        </div>
+
+         <div class="form_register">
+            <label for="password">Password</label>
+            <input type="password" class="rform" id="password" name="password">
+        </div>
+                 <div class="form_register">
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" class="rform" id="passwordConfirm" name="passwordConfirm">
+        </div>
+        <button type="subbmit" class="brform">Register</button>
+    </form>
+    
+    {{#if message }}
+        <h4 class="danger_alert">{{message}}</h4>
+    {{/if}}
+</body>
+</html>
