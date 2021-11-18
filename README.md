@@ -1,3 +1,11 @@
-"# NodeJS-Authentication-System" 
+# NodeJS-Authentication-System" 
 
-Module ที่ NodeJS เรียกหา ให้เอา npm <ชื่อ Module>
+
+##How to use?
+ ```
+ Download file and type (npm install) in your terminal. 💻
+ ```
+ ##How to start?
+ ```
+ type (npm start) in your terminal. 💻
+ ```
